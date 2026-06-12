@@ -1,0 +1,179 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F4F7F4;
+    color: #2C3E2F;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E4620;
+}
+
+.logo span {
+    color: #4CAF50;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #2C3E2F;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+.btn-contato {
+    background-color: #1E4620;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-contato:hover {
+    background-color: #4CAF50;
+}
+
+/* Hero Section com Imagem/Gradiente Forte */
+.hero {
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(30, 70, 32, 0.9), rgba(76, 175, 80, 0.7)), 
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1470') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.txt-verde {
+    color: #81C784;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.hero-buttons .btn-secondary {
+    border: 2px solid white;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.hero-buttons .btn-primary:hover { transform: translateY(-3px); }
+.hero-buttons .btn-secondary:hover { background-color: rgba(255,255,255,0.2); }
+
+/* Seção de Indicadores (Cards) */
+.indicators {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.indicators h2 {
+    font-size: 2.5rem;
+    color: #1E4620;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    width: 280px;
+    border-bottom: 5px solid #4CAF50;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.icon-water { color: #2196F3; }
+.icon-carbon { color: #81C784; }
+.icon-bio { color: #1E4620; }
+
+.card h3 {
+    font-size: 2.5rem;
+    color: #1E4620;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1E4620;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+}
